@@ -42,4 +42,9 @@ creo el archivo .env con su config:
 
 y creo el .env.example,
 
-creo el archivo .gitignore e ignoro el /node_modules, package-lock,json, .env 
+creo el archivo .gitignore e ignoro el /node_modules, package-lock,json, .env
+
+## Servidor
+
+Cree el servidor en el archivo app.js donde hago el listen donde por consola muestro el servidor:
+http://127.23.12.50:5010
