@@ -71,3 +71,13 @@ ids disponibles:
 - 321
 Se crea otro get en el cual se recibe el parametro id_proxima con el cual se realiza la query para obtener la proxima cita
 http://127.23.12.50:5010/citas/proxima/:id_proxima
+
+## 5. Encontrar todos los pacientes que tienen citas con un médico específico (por ejemplo, el médico con **med_nroMatriculaProsional 1**)
+ids disponibles:
+- 100
+- 200
+- 300
+- 400
+- 500
+Se crea otro get en el cual se recibe el parametro id_medico con el cual se realiza la query para obtener los usuarios con una cita de un medico en especifico
+http://127.23.12.50:5010/pacientes/:id_medico
