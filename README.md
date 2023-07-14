@@ -64,3 +64,10 @@ http://127.23.12.50:5010/citas
 
 Se crea la ruta medicos en el router y se reciben los parametros, recibe el nombre de la especialidad y retorna los medicos de esa especialidad en
 http://127.23.12.50:5010/medicos/:especialidad
+# 4. Encontrar la próxima cita para un paciente específico (por ejemplo, el paciente con **usu_id 1**):
+ids disponibles: 
+- 74
+- 123
+- 321
+Se crea otro get en el cual se recibe el parametro id_proxima con el cual se realiza la query para obtener la proxima cita
+http://127.23.12.50:5010/citas/proxima/:id_proxima

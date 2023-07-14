@@ -57,7 +57,7 @@ CREATE TABLE medico(
     med_nombrecompleto VARCHAR(120) default null,
     med_consultorio INT, 
     med_especialidad INT, 
-    FOREIGN KEY(med_consultorio) REFERENCES consultorio(cons_codigo),
+    FOREIGN KEY(med_consultorio) REFERENCES consultorio(cons_codigo),74,123,321
     FOREIGN KEY(med_especialidad) REFERENCES especialidad(esp_id)
 );
 CREATE TABLE cita (

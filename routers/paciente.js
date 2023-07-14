@@ -18,7 +18,7 @@ storagePaciente.get('/', (req,res)=>{
         /*sql*/`SELECT * FROM usuario ORDER BY usu_nombre ASC`,
         (err,data,fill)=>{
             if(err){
-                console.log(err);
+                res.status(500).send("Error al traer los datos")
             }
             res.send(JSON.stringify(data));
         }
