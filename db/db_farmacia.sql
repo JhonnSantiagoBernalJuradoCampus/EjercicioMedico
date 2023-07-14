@@ -48,12 +48,10 @@ CREATE TABLE especialidad(
     esp_id INT (20) PRIMARY KEY AUTO_INCREMENT,
     esp_nombre VARCHAR (20) default null
 );
-
 CREATE TABLE consultorio(
     cons_codigo INT (20) PRIMARY KEY AUTO_INCREMENT,
     cons_nombre VARCHAR (50) default null
 );
-
 CREATE TABLE medico(
     med_nroMatriculaProfesional INT PRIMARY KEY,
     med_nombrecompleto VARCHAR(120) default null,
@@ -62,7 +60,6 @@ CREATE TABLE medico(
     FOREIGN KEY(med_consultorio) REFERENCES consultorio(cons_codigo),
     FOREIGN KEY(med_especialidad) REFERENCES especialidad(esp_id)
 );
-
 CREATE TABLE cita (
     cit_codigo INT PRIMARY KEY AUTO_INCREMENT,
     cit_fecha DATE,

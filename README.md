@@ -37,6 +37,7 @@ para la configuracion basica de el proyecto inicio con el comando:
 - npm i -E -D reflect-metadata
 - npm i -E -D typescript
 - npm i -E -D nodemon
+- npm i -E -D class-validator
 
 creo el archivo .env con su config:
 
@@ -58,3 +59,8 @@ http://127.23.12.50:5010/pacientes
 
 Se crea la ruta citas en el router y se crea el get con su query
 http://127.23.12.50:5010/citas
+
+## 3 Obtener todos los médicos de una especialidad específica (por ejemplo, **'Cardiología'**)
+
+Se crea la ruta medicos en el router y se reciben los parametros, recibe el nombre de la especialidad y retorna los medicos de esa especialidad en
+http://127.23.12.50:5010/medicos/:especialidad
