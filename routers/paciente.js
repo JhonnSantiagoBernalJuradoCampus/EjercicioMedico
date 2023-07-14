@@ -25,4 +25,17 @@ storagePaciente.get('/', (req,res)=>{
     ) 
 })
 
+storagePaciente.get('/:id_medico', (req,res)=>{
+    con.query(
+        /*sql */`SELECT usuario.*, cita.cit_fecha, medico.med_nroMatriculaProfesional, medico.med_nombrecompleto FROM usuario INNER JOIN cita ON usuario.usu_id = cita.cit_datosUsuario INNER JOIN medico ON cita.cit_medico = medico.med_nroMatriculaProfesional WHERE medico.med_nroMatriculaProfesional = ${req.params.id_medico};`,
+        (err,data,fill)=>{
+            if(err){
+                res.status(500).send("Error al traer los datos")
+            }
+            res.send(JSON.stringify(data));
+        }
+
+    )
+})
+
 export default storagePaciente;
