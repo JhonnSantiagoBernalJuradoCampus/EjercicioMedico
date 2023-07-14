@@ -80,4 +80,12 @@ ids disponibles:
 - 400
 - 500
 Se crea otro get en el cual se recibe el parametro id_medico con el cual se realiza la query para obtener los usuarios con una cita de un medico en especifico
-http://127.23.12.50:5010/pacientes/:id_medico
+http://127.23.12.50:5010/pacientes/grupo/:id_medico
+
+# 6. Obtener las consultorías para un paciente específico (por ejemplo, paciente **con usu_id 1**)
+ids disponibles:
+- 74
+- 123
+- 321
+Se creo otro get en paciente.js y modifique el endpoint de el anterior punto para no tener inconvenientes al momento de recibir parametros, este endpoint permite recibir un paciente especifico dependiendo de su id
+http://127.23.12.50:5010/pacientes/:id_paciente
