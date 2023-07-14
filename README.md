@@ -53,3 +53,8 @@ http://127.23.12.50:5010
 
 Se crea la ruta de pacientes y se crea el get con su query
 http://127.23.12.50:5010/pacientes
+
+# 2 Obtener todos las citas por la fecha
+
+Se crea la ruta citas en el router y se crea el get con su query
+http://127.23.12.50:5010/citas
