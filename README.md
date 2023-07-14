@@ -48,3 +48,8 @@ creo el archivo .gitignore e ignoro el /node_modules, package-lock,json, .env
 
 Cree el servidor en el archivo app.js donde hago el listen donde por consola muestro el servidor:
 http://127.23.12.50:5010
+
+# 1 Obtener todos los pacientes alfabeticamente
+
+Se crea la ruta de pacientes y se crea el get con su query
+http://127.23.12.50:5010/pacientes
