@@ -70,3 +70,4 @@ CREATE TABLE cita (
     FOREIGN KEY(cit_medico) REFERENCES medico(med_nroMatriculaProfesional),
     FOREIGN KEY(cit_datosUsuario) REFERENCES usuario(usu_id)
 );
+SELECT cita.cit_fecha, usuario.usu_nombre, usuario.usu_primer_apellido_usuar, medico.med_nombrecompleto, estado_cita.estcita_nombre FROM cita INNER JOIN usuario ON cita.cit_datosUsuario = usuario.usu_id INNER JOIN medico on cita.cit_medico = medico.med_nroMatriculaProfesional INNER JOIN estado_cita ON cita.cit_estadoCita = estado_cita.estcita_id WHERE estado_cita.estcita_id = 1 AND MONTH(cita.cit_fecha) = 09;

@@ -74,4 +74,16 @@ storageCitas.get("/genero/:genero", (req,res)=>{
     )
 })
 
+storageCitas.get("/mes/:mes", (req, res) => {
+    con.query(
+        /*sql */`SELECT cita.cit_fecha, usuario.usu_nombre, usuario. usu_primer_apellido_usuar, medico.med_nombrecompleto, estado_cita.estcita_nombre FROM cita INNER JOIN usuario ON cita.cit_datosUsuario = usuario.usu_id INNER JOIN medico on cita.cit_medico = medico.med_nroMatriculaProfesional INNER JOIN estado_cita ON cita.cit_estadoCita = estado_cita.estcita_id WHERE estado_cita.estcita_id = 1 AND MONTH(cita.cit_fecha) = ${req.params.mes};`,
+        (err, data, fill) => {
+            if (err) {
+                res.status(500).send(err)
+            }
+            res.send(JSON.stringify(data))
+        }
+)
+})
+
 export default storageCitas;

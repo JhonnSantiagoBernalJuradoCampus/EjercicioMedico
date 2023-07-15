@@ -152,3 +152,13 @@ Example:
     "acudiente": 1
 }
 y se crea el dto para verificar la entrada de datos
+POST:
+http://127.23.12.50:5010/pacientes
+## 13. Mostrar todas las citas que fueron rechazadas y en un mes específico, mostrar la fecha de la cita, el nombre del usuario y el médico.
+Creo el get de las citas por un mes especifico y que su estado sea aprobado recibo como parametro el mes el cual quiero consultar:
+los meses disponibles son:
+- 04
+- 07
+- 08
+- 09
+http://127.23.12.50:5010/citas/mes/:mes
