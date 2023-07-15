@@ -127,3 +127,10 @@ ids disponibles:
 - 123
 - 321
 http://127.23.12.50:5010/consultorio/:id_paciente
+
+## 11. Obtener todas las citas realizadas por los pacientes de un genero si su estado de la cita fue atendidad
+Se creo el get de citas y recibe como parametro el id del genero:
+- 1 : Masculino
+- 2 : Femenino
+- 3 : Otro
+http://127.23.12.50:5010/citas/genero/1
