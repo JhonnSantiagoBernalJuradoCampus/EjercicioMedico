@@ -50,4 +50,16 @@ storageCitas.get("/proxima/:id_proxima", (req,res)=>{
     )
 })
 
+storageCitas.get("/medico/:fecha", (req,res)=>{
+    con.query(
+        /*sql */`SELECT cita.* FROM cita WHERE cita.cit_medico = ${req.body.id} AND cita.cit_fecha LIKE "${req.params.fecha}";`,
+        (err,data,fill)=>{
+            if(err){
+                res.status(500).send("Error al traer los datos")
+            }
+            res.send(JSON.stringify(data))
+        }
+    )
+})
+
 export default storageCitas;

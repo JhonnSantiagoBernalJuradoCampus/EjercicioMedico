@@ -74,7 +74,6 @@ http://127.23.12.50:5010/citas/proxima/:id_proxima
 
 ## 5. Encontrar todos los pacientes que tienen citas con un médico específico (por ejemplo, el médico con **med_nroMatriculaProsional 1**)
 ids disponibles:
-- 100
 - 200
 - 300
 - 400
@@ -102,3 +101,20 @@ http://127.23.12.50:5010/citas/:fecha
 # 8. Obtener los médicos y sus consultorios
 Se creo el get de medicos el cual muestra los medicos y su consultorio
 http://127.23.12.50:5010/medicos
+
+## 9 9. Contar el número de citas que un médico tiene en un día específico (por ejemplo, el médico con **med_nroMatriculaProsional 1 en '2023-07-12'**)
+Se creo el get de las citas de un medico por una fecha en especifico,
+recibe: 
+- req.params = fecha
+- req.body = {"id": 500}
+fechas disponibles:
+- 2023-04-05
+- 2023-07-07
+- 2023-08-08
+- 2023-09-10
+ids disponibles:
+- 200
+- 300
+- 400
+- 500
+http://127.23.12.50:5010/citas/medico/:fecha
