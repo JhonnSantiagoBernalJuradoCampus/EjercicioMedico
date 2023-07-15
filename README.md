@@ -133,7 +133,7 @@ Se creo el get de citas y recibe como parametro el id del genero:
 - 1 : Masculino
 - 2 : Femenino
 - 3 : Otro
-http://127.23.12.50:5010/citas/genero/1
+http://127.23.12.50:5010/citas/genero/:genero
 
 # 12. Insertar un paciente a la tabla usuario pero si es menor de edad solicitar primero que ingrese el acudiente y validar si ya estaba registrado el acudiente.
 Se creo el post de pacientes los parametros que reciben son
