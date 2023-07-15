@@ -102,7 +102,7 @@ http://127.23.12.50:5010/citas/:fecha
 Se creo el get de medicos el cual muestra los medicos y su consultorio
 http://127.23.12.50:5010/medicos
 
-## 9 9. Contar el número de citas que un médico tiene en un día específico (por ejemplo, el médico con **med_nroMatriculaProsional 1 en '2023-07-12'**)
+##  9. Contar el número de citas que un médico tiene en un día específico (por ejemplo, el médico con **med_nroMatriculaProsional 1 en '2023-07-12'**)
 Se creo el get de las citas de un medico por una fecha en especifico,
 recibe: 
 - req.params = fecha
@@ -118,3 +118,12 @@ ids disponibles:
 - 400
 - 500
 http://127.23.12.50:5010/citas/medico/:fecha
+
+# 10. Obtener los consultorio donde se aplicó las citas de un paciente
+Se creo el get de consultorio con el id de el respectivo id del usuario
+se recibe el parametro req.params.id_paciente
+ids disponibles:
+- 74
+- 123
+- 321
+http://127.23.12.50:5010/consultorio/:id_paciente
