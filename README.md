@@ -89,3 +89,12 @@ ids disponibles:
 - 321
 Se creo otro get en paciente.js y modifique el endpoint de el anterior punto para no tener inconvenientes al momento de recibir parametros, este endpoint permite recibir un paciente especifico dependiendo de su id
 http://127.23.12.50:5010/pacientes/:id_paciente
+
+## 7. Encontrar todas las citas para un día específico (por ejemplo, **'2023-07-12'**)
+fechas disponibles:
+- 2023-04-05
+- 2023-07-07
+- 2023-08-08
+- 2023-09-10
+Se creo otro get en citas.js donde se recibe el paramtro fecha para obtener las citas de una fecha especifica
+http://127.23.12.50:5010/citas/:fecha

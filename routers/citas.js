@@ -25,8 +25,19 @@ storageCitas.get("/", (req,res)=>{
     )
 })
 
+storageCitas.get("/:fecha", (req,res)=>{
+    con.query(
+        /*sql */`SELECT * FROM cita WHERE cit_fecha = "${req.params.fecha}"`,
+        (err,data,fill)=>{
+            if(err){
+                res.status(500).end("Error al traer los datos")
+            }
+            res.send(JSON.stringify(data))
+        }
+    )
+})
+
 storageCitas.get("/proxima/:id_proxima", (req,res)=>{
-    const {idPaciente} = req.params;
     con.query(
         /*sql */`SELECT cita.*, usuario.usu_id FROM cita INNER JOIN usuario on cita.cit_datosUsuario = usuario.usu_id WHERE usuario.usu_id = ${req.params.id_proxima} AND cita.cit_estadoCita = 1 ORDER BY cita.cit_fecha ASC;`,
 
