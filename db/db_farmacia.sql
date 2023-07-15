@@ -26,7 +26,7 @@ create table estado_cita(
 estcita_id INT PRIMARY KEY AUTO_INCREMENT,
 estcita_nombre VARCHAR(20) default null
 );
-
+SELECT * FROM usuario;
 create table usuario(
 usu_id INT PRIMARY KEY AUTO_INCREMENT,
 usu_nombre VARCHAR(50) default null,

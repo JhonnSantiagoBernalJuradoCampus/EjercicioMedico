@@ -54,24 +54,25 @@ storagePaciente.get('/grupo/:id_medico', (req,res)=>{
 
 storagePaciente.post('/', proxyPaciente, (req,res)=>{
     // datos de entrada
-    // {
-    //     "cc": 1098621901,
-    //     "primer_nombre": "jhon",
-    //     "segundo_nombre": "santiago",
-    //     "primer_apellido": "bernal",
-    //     "segundo_apellido": "jurado",
-    //     "telefono": "+57319567",
-    //     "direccion": "calle#14-16",
-    //     "email": "santiago@gmail.com",
-    //     "tipo_documento": 1,
-    //     "genero": 1,
-    //     "acudiente": 1
-    // }
+    //  {
+        //     "cc": 1098621901,
+        //     "primer_nombre": "jhon",
+        //     "segundo_nombre": "santiago",
+        //     "primer_apellido": "bernal",
+        //     "segundo_apellido": "jurado",
+        //     "telefono": "+57319567",
+        //     "direccion": "calle#14-16",
+        //     "email": "santiago@gmail.com",
+        //     "tipo_documento": 1,
+        //     "genero": 1,
+        //     "acudiente": 1
+        // }
     con.query(
-        /*sql */`INSERT INTO usuario SET ${req.body}`,
+        /*sql */`INSERT INTO usuario SET ?`,
+        [req.body],
         (err,data,fill)=>{
             if(err){
-                res.status(500).send("Error al insertar datos")
+                res.status(500).send("Error al enviar datos")
             }
             res.send("Agregado exitosamente")
         }

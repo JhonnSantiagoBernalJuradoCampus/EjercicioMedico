@@ -29,7 +29,7 @@ __decorate([
         if (Math.floor(value) && typeof value == "number")
             return Math.floor(value);
         else
-            throw { status: 400, message: "Error en los parametros de entrada" };
+            throw { status: 400, message: "Error en el parametro cc" };
     }, { toClassOnly: true }),
     __metadata("design:type", Number)
 ], DtoPaciente.prototype, "usu_id", void 0);
@@ -39,7 +39,7 @@ __decorate([
         if (/^[A-Z-a-z\s]+$/.test(value))
             return value;
         else
-            throw { status: 400, message: "Error en los parametros de entradas" };
+            throw { status: 400, message: "Error en el parametro primer_nombre" };
     }, { toClassOnly: true }),
     __metadata("design:type", String)
 ], DtoPaciente.prototype, "usu_nombre", void 0);
@@ -49,7 +49,7 @@ __decorate([
         if (/^[A-Z-a-z\s]+$/.test(value))
             return value;
         else
-            throw { status: 400, message: "Error en los parametros de entradas" };
+            throw { status: 400, message: "Error en el parametro segundo_nombre" };
     }, { toClassOnly: true }),
     __metadata("design:type", String)
 ], DtoPaciente.prototype, "usu_segdo_nombre", void 0);
@@ -59,7 +59,7 @@ __decorate([
         if (/^[A-Z-a-z\s]+$/.test(value))
             return value;
         else
-            throw { status: 400, message: "Error en los parametros de entradas" };
+            throw { status: 400, message: "Error en el parametro primer_apellido" };
     }, { toClassOnly: true }),
     __metadata("design:type", String)
 ], DtoPaciente.prototype, "usu_primer_apellido_usuar", void 0);
@@ -69,17 +69,17 @@ __decorate([
         if (/^[A-Z-a-z\s]+$/.test(value))
             return value;
         else
-            throw { status: 400, message: "Error en los parametros de entradas" };
+            throw { status: 400, message: "Error en el parametro segundo_apellido" };
     }, { toClassOnly: true }),
     __metadata("design:type", String)
 ], DtoPaciente.prototype, "usu_segdo_apellido_usuar", void 0);
 __decorate([
     Expose({ name: "telefono" }),
     Transform(({ value }) => {
-        if (/^[\d\s+]+$/.test(value))
+        if (/^[0-9]+$/.test(value))
             return value;
         else
-            throw { status: 400, message: "Error en los parametros de entradas" };
+            throw { status: 400, message: "Error en el parametro telefono" };
     }, { toClassOnly: true }),
     __metadata("design:type", String)
 ], DtoPaciente.prototype, "usu_telefono", void 0);
@@ -89,7 +89,7 @@ __decorate([
         if (/^[\w\s+#-]+$/.test(value))
             return value;
         else
-            throw { status: 400, message: "Error en los parametros de entradas" };
+            throw { status: 400, message: "Error en el parametro direccion" };
     }, { toClassOnly: true }),
     __metadata("design:type", String)
 ], DtoPaciente.prototype, "usu_direccion", void 0);
@@ -99,7 +99,7 @@ __decorate([
         if (/^[\w\s+#@.-]+$/g.test(value))
             return value;
         else
-            throw { status: 400, message: "Error en los parametros de entradas" };
+            throw { status: 400, message: "Error en el parametro email" };
     }, { toClassOnly: true }),
     __metadata("design:type", String)
 ], DtoPaciente.prototype, "usu_email", void 0);
@@ -109,7 +109,7 @@ __decorate([
         if (Math.floor(value) && typeof value == "number")
             return Math.floor(value);
         else
-            throw { status: 400, message: "Error en los parametros de entrada" };
+            throw { status: 400, message: "Error en el parametro tipo_documento" };
     }, { toClassOnly: true }),
     __metadata("design:type", Number)
 ], DtoPaciente.prototype, "usu_tipodoc", void 0);
@@ -119,7 +119,7 @@ __decorate([
         if (Math.floor(value) && typeof value == "number")
             return Math.floor(value);
         else
-            throw { status: 400, message: "Error en los parametros de entrada" };
+            throw { status: 400, message: "Error en el parametro genero" };
     }, { toClassOnly: true }),
     __metadata("design:type", Number)
 ], DtoPaciente.prototype, "usu_genero", void 0);
@@ -129,7 +129,7 @@ __decorate([
         if (Math.floor(value) && typeof value == "number")
             return Math.floor(value);
         else
-            throw { status: 400, message: "Error en los parametros de entrada" };
+            throw { status: 400, message: "Error en el parametro acudiente" };
     }, { toClassOnly: true }),
     __metadata("design:type", Number)
 ], DtoPaciente.prototype, "usu_acudiente", void 0);
