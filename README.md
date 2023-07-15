@@ -99,9 +99,9 @@ Para configurar el proyecto, sigue estos pasos:
      "tipo_documento": 1,
      "genero": 1,
      "acudiente": 1
-   } ```
-13. 
-Mostrar todas las citas que fueron rechazadas y en un mes específico, mostrar la fecha de la cita, el nombre del usuario y el médico:
+   }
+    ```json
+13. Mostrar todas las citas que fueron rechazadas y en un mes específico, mostrar la fecha de la cita, el nombre del usuario y el médico:
     - Endpoint: /citas/mes/:mes
     - Método: GET
     - Descripción: Obtiene todas las citas rechazadas en un mes específico. Muestra la fecha de la cita, el nombre del usuario y el médico.
