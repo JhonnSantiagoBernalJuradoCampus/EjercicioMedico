@@ -134,3 +134,21 @@ Se creo el get de citas y recibe como parametro el id del genero:
 - 2 : Femenino
 - 3 : Otro
 http://127.23.12.50:5010/citas/genero/1
+
+# 12. Insertar un paciente a la tabla usuario pero si es menor de edad solicitar primero que ingrese el acudiente y validar si ya estaba registrado el acudiente.
+Se creo el post de pacientes los parametros que reciben son
+Example:
+{
+    "cc": 312431,
+    "primer_nombre": "jhon",
+    "segundo_nombre": "santiago",
+    "primer_apellido": "bernal",
+    "segundo_apellido": "jurado",
+    "telefono": "1231212",
+    "direccion": "calle#14-16",
+    "email": "santiago@gmail.com",
+    "tipo_documento": 1,
+    "genero": 1,
+    "acudiente": 1
+}
+y se crea el dto para verificar la entrada de datos
