@@ -86,7 +86,7 @@ Para configurar el proyecto, sigue estos pasos:
    - Descripción: Inserta un paciente en la tabla de usuarios. Si el paciente es menor de edad, se requiere la información del acudiente y se verifica si el acudiente ya está registrado.
 
    Ejemplo de objeto JSON de solicitud:
-   ```json
+   ```js
    {
      "cc": 312431,
      "primer_nombre": "jhon",
@@ -100,7 +100,8 @@ Para configurar el proyecto, sigue estos pasos:
      "genero": 1,
      "acudiente": 1
    }
-    json```
+    ```
+   
 13. Mostrar todas las citas que fueron rechazadas y en un mes específico, mostrar la fecha de la cita, el nombre del usuario y el médico:
     - Endpoint: /citas/mes/:mes
     - Método: GET
