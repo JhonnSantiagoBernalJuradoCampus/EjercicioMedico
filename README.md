@@ -98,3 +98,7 @@ fechas disponibles:
 - 2023-09-10
 Se creo otro get en citas.js donde se recibe el paramtro fecha para obtener las citas de una fecha especifica
 http://127.23.12.50:5010/citas/:fecha
+
+# 8. Obtener los médicos y sus consultorios
+Se creo el get de medicos el cual muestra los medicos y su consultorio
+http://127.23.12.50:5010/medicos
